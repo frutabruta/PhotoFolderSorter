@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>877</width>
+    <width>888</width>
     <height>637</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>PhotoFolderSorter</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
@@ -33,14 +33,14 @@
       <item>
        <widget class="QPushButton" name="pushButton_selectFolder">
         <property name="text">
-         <string>vyber složku</string>
+         <string>select images folder</string>
         </property>
        </widget>
       </item>
      </layout>
     </item>
     <item row="2" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
       <item>
        <widget class="QFrame" name="frame">
         <property name="frameShape">
@@ -76,34 +76,69 @@
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="3" column="1">
-           <widget class="QLineEdit" name="lineEdit_path_3"/>
-          </item>
-          <item row="1" column="2">
-           <widget class="QPushButton" name="pushButton_path_1">
+          <item row="3" column="2">
+           <widget class="QPushButton" name="pushButton_path_3">
             <property name="text">
-             <string>Vybrat cestu</string>
+             <string>Select path</string>
             </property>
            </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="pushButton_path_4">
+            <property name="text">
+             <string>Select path</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_path_2"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_path_1"/>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButton_path_2">
+            <property name="text">
+             <string>Select path</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_path_3"/>
           </item>
           <item row="0" column="1">
            <widget class="QLineEdit" name="lineEdit_path_0"/>
           </item>
-          <item row="1" column="0">
-           <widget class="QPushButton" name="pushButton_move_1">
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_path_0">
             <property name="text">
-             <string>Přesunout
-F2</string>
-            </property>
-            <property name="shortcut">
-             <string>F2</string>
+             <string>Select path</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton_move_0">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_path_1">
             <property name="text">
-             <string>Přesunout
+             <string>Select path</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEdit_path_4"/>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="pushButton_move_0">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 10 0 10 0px ; padding: 10 10 10 10 px;</string>
+            </property>
+            <property name="text">
+             <string>Move
 F1</string>
             </property>
             <property name="shortcut">
@@ -111,56 +146,39 @@ F1</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="2">
-           <widget class="QPushButton" name="pushButton_path_0">
-            <property name="text">
-             <string>Vybrat cestu</string>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="pushButton_move_1">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
             </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QPushButton" name="pushButton_move_3">
+            <property name="styleSheet">
+             <string notr="true">margin: 10 0 10 0px ; padding: 10 10 10 10 px;</string>
+            </property>
             <property name="text">
-             <string>Přesunout
-F4</string>
+             <string>Move
+F2</string>
             </property>
             <property name="shortcut">
-             <string>F4</string>
+             <string>F2</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="lineEdit_path_4"/>
-          </item>
-          <item row="2" column="2">
-           <widget class="QPushButton" name="pushButton_path_2">
-            <property name="text">
-             <string>Vybrat cestu</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QPushButton" name="pushButton_path_3">
-            <property name="text">
-             <string>Vybrat cestu</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QPushButton" name="pushButton_move_4">
-            <property name="text">
-             <string>Přesunout
-F5</string>
-            </property>
-            <property name="shortcut">
-             <string>F5</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
+          <item row="2" column="3">
            <widget class="QPushButton" name="pushButton_move_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 10 0 10 0px ; padding: 10 10 10 10 px;</string>
+            </property>
             <property name="text">
-             <string>Přesunout
+             <string>Move
 F3</string>
             </property>
             <property name="shortcut">
@@ -168,18 +186,45 @@ F3</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="2">
-           <widget class="QPushButton" name="pushButton_path_4">
+          <item row="3" column="3">
+           <widget class="QPushButton" name="pushButton_move_3">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 10 0 10 0px ; padding: 10 10 10 10 px;</string>
+            </property>
             <property name="text">
-             <string>Vybrat cestu</string>
+             <string>Move
+F4</string>
+            </property>
+            <property name="shortcut">
+             <string>F4</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_path_1"/>
-          </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_path_2"/>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="pushButton_move_4">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">margin: 10 0 10 0px ; padding: 10 10 10 10 px;</string>
+            </property>
+            <property name="text">
+             <string>Move
+F5</string>
+            </property>
+            <property name="shortcut">
+             <string>F5</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -220,7 +265,7 @@ F3</string>
           <item>
            <widget class="QPushButton" name="pushButton_first">
             <property name="text">
-             <string>první</string>
+             <string>First</string>
             </property>
             <property name="shortcut">
              <string>Home</string>
@@ -230,7 +275,7 @@ F3</string>
           <item>
            <widget class="QPushButton" name="pushButton_last">
             <property name="text">
-             <string>poslední</string>
+             <string>Last</string>
             </property>
             <property name="shortcut">
              <string>End</string>
@@ -250,7 +295,7 @@ F3</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>877</width>
+     <width>888</width>
      <height>21</height>
     </rect>
    </property>
